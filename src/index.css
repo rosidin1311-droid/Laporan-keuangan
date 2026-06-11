@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@450;550;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* charcoal-based slate override */
+  --color-slate-50: #f6f6f7;
+  --color-slate-100: #ededf0;
+  --color-slate-150: #dfdfe2;
+  --color-slate-200: #e2e2e5;
+  --color-slate-300: #cdccd1;
+  --color-slate-400: #9c9ba2;
+  --color-slate-500: #706f76;
+  --color-slate-600: #54535a;
+  --color-slate-700: #3b3a40;
+  --color-slate-800: #222125;
+  --color-slate-900: #161519;
+  --color-slate-950: #0d0c0e;
+
+  /* lime-based indigo override */
+  --color-indigo-50: #f7fee7;
+  --color-indigo-100: #ecfccb;
+  --color-indigo-200: #d9f99d;
+  --color-indigo-300: #bef264;
+  --color-indigo-400: #a3e635;
+  --color-indigo-500: #84cc16;
+  --color-indigo-650: #65a30d;
+  --color-indigo-600: #65a30d;
+  --color-indigo-700: #4d7c0f;
+  --color-indigo-800: #3f6212;
+  --color-indigo-900: #1a2e05;
+  --color-indigo-950: #161519;
+}
+
+/* Base resets & print overrides */
+body {
+  font-family: var(--font-sans);
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
